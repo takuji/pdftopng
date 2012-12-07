@@ -2,14 +2,21 @@
 
 require 'pathname'
 require 'pdftopng'
+require 'optparse'
 
 options = {
-  work_dir: Pathname.new("./out")
+  work_dir: Pathname.new("./out"),
+  prefix: "page",
+  separator: "-"
 }
+
+opt = OptionParser.new
+opt.on("--prefix VAL") {|prefix| options[:prefix] = prefix}
+opt.parse!
 
 # checks if pdftoppm and convert are installed.
 # TODO: implement this
 
 # main
 pdf_path = Pathname.new(ARGV[0]).realpath
-PdfToPng.convert(options[:work_dir], pdf_path)
+PdfToPng.convert(pdf_path, options)
