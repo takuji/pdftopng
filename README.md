@@ -1,4 +1,4 @@
-# Pdf2png
+# pdftopng
 
 A PDF to PNGs conversion tool.
 
@@ -9,7 +9,7 @@ These two commands have to be installed before you use pdf2png.
 
 Add this line to your application's Gemfile:
 
-    gem 'pdf2png'
+    gem 'pdftopng'
 
 And then execute:
 
@@ -17,13 +17,11 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install pdf2png
+    $ gem install pdftopng
 
 ## Usage
 
-$ pdf2png path/to/pdf
-$ pdf2png path/to/pdf -d out_dir
-$ pdf2png path/to/pdf --prefix=page_
+$ pdftopng path/to/pdf
 
 ## Contributing
 

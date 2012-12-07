@@ -1,7 +1,7 @@
-require "pdf2png/version"
+require "pdftopng/version"
 require "fileutils"
 
-module Pdf2png
+module PdfToPng
 
   # Your code goes here...
   def self.convert(work_dir, pdf_path)

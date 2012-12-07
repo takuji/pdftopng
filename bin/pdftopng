@@ -1,7 +1,7 @@
 #! /usr/bin/env ruby
 
 require 'pathname'
-require 'pdf2png'
+require 'pdftopng'
 
 options = {
   work_dir: Pathname.new("./out")
@@ -12,4 +12,4 @@ options = {
 
 # main
 pdf_path = Pathname.new(ARGV[0]).realpath
-Pdf2png.convert(options[:work_dir], pdf_path)
+PdfToPng.convert(options[:work_dir], pdf_path)

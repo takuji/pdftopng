@@ -1,11 +1,11 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'pdf2png/version'
+require 'pdftopng/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "pdf2png"
-  gem.version       = Pdf2png::VERSION
+  gem.name          = "pdftopng"
+  gem.version       = PdfToPng::VERSION
   gem.authors       = ["Takuji Shimokawa"]
   gem.email         = ["takuji.shimokawa@gmail.com"]
   gem.description   = %q{A tool to convert a PDF file into a set of PNG files}
