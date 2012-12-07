@@ -11,4 +11,5 @@ options = {
 # TODO: implement this
 
 # main
-Pdf2png.convert(options.work_dir, ARGV[0])
+pdf_path = Pathname.new(ARGV[0]).realpath
+Pdf2png.convert(options[:work_dir], pdf_path)

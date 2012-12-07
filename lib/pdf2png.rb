@@ -1,4 +1,5 @@
 require "pdf2png/version"
+require "fileutils"
 
 module Pdf2png
 
