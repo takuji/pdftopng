@@ -1,0 +1,14 @@
+#! /usr/bin/env ruby
+
+require 'pathname'
+require 'pdf2png'
+
+options = {
+  work_dir: Pathname.new("./out")
+}
+
+# checks if pdftoppm and convert are installed.
+# TODO: implement this
+
+# main
+Pdf2png.convert(options.work_dir, ARGV[0])
